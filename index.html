@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Photo Editor</h1>
+    <div class="file-upload-section" onclick="selectImage()">
+        <input type="file" id="foto-file">
+        Select Image
+    </div>
+
+    <div class="img-container">
+        <img id="foto-image" class="image" />
+    </div>
+    <div class="buttons-section">
+        <table class="buttons-table">
+            <tr>
+                <td><button class="operation-btn" onclick="makeGrayScale()">Grayscale</button></td>
+                <td><button class="operation-btn" onclick="makeBright()">Brighter</button></td>
+                <td><button class="operation-btn" onclick="makeDark()">Darker</button></td>
+            </tr>
+
+            <tr>
+                <td><button class="operation-btn" onclick="makeBlur()">Blur</button></td>
+                <td><button class="operation-btn" onclick="makeEmboss()">Emboss</button></td>
+                <td><button class="operation-btn" onclick="makeSharp()">Sharp</button></td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><button class="operation-btn download-btn" onclick="download()">Download</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://rawcdn.githack.com/kousik19/foto.js/d604b02c69b6f037875bc4a3050b85d776dc4659/foto.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
